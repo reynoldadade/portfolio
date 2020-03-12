@@ -7,6 +7,7 @@ import Contact from '../components/Contact/Contact';
 import Skills from '../components/Skills/Skills';
 import Certifications from '../components/Certifications/Certifications';
 import Lang from '../components/Languages/Language';
+import Blog from '../components/Blogs/Blog';
 
 const Layout = () => {
   return (
@@ -33,13 +34,13 @@ const Layout = () => {
             <Grid item xs={12}>
               <Lang />
             </Grid>
+            <Grid item xs={12}>
+              <Blog />
+            </Grid>
           </Grid>
         </Grid>
         <Grid item md={12} sm={12} xs={12}>
           <div>Work Experience</div>
-        </Grid>
-        <Grid item md={12} sm={12} xs={12}>
-          <div>blog posts</div>
         </Grid>
       </Grid>
     </Fragment>
