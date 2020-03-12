@@ -6,6 +6,7 @@ import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
 import Skills from '../components/Skills/Skills';
 import Certifications from '../components/Certifications/Certifications';
+import Lang from '../components/Languages/Language';
 
 const Layout = () => {
   return (
@@ -28,6 +29,9 @@ const Layout = () => {
             </Grid>
             <Grid item xs={12}>
               <Certifications />
+            </Grid>
+            <Grid item xs={12}>
+              <Lang />
             </Grid>
           </Grid>
         </Grid>

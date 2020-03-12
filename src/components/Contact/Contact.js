@@ -4,8 +4,7 @@ import { LocationOn, Email, LinkedIn, GitHub } from '@material-ui/icons';
 import classes from './Contact.module.css';
 import PaperUI from '../../UI/Paper';
 
-const github = 'Github';
-const Contact = props => {
+const Contact = () => {
   return (
     <PaperUI>
       <Typography className={classes.Paragraph} variant="body1">
