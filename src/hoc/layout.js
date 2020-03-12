@@ -4,7 +4,8 @@ import Profile from '../components/Profile/Profile';
 import Grid from '@material-ui/core/Grid';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
-import Skills from '../components/skills/Skills';
+import Skills from '../components/Skills/Skills';
+import Certifications from '../components/Certifications/Certifications';
 
 const Layout = () => {
   return (
@@ -17,11 +18,18 @@ const Layout = () => {
         <Grid item md={4} xs={12} sm={12}>
           <Contact />
         </Grid>
-        <Grid item md={8} sm={12} xs={12} style={{ marginTop: 5 }}>
+        <Grid item md={8} sm={12} xs={12}>
           <Projects />
         </Grid>
-        <Grid item md={4} sm={12} xs={12} style={{ marginTop: 5 }}>
-          <Skills />
+        <Grid item md={4} sm={12} xs={12}>
+          <Grid container>
+            <Grid item xs={12}>
+              <Skills />
+            </Grid>
+            <Grid item xs={12}>
+              <Certifications />
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item md={12} sm={12} xs={12}>
           <div>Work Experience</div>
