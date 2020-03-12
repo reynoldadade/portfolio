@@ -1,0 +1,8 @@
+.Paragraph {
+  display: flex;
+  justify-content: center;
+}
+
+.Icon {
+  margin-right: 10px;
+}
