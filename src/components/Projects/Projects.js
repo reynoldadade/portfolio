@@ -36,6 +36,7 @@ const Project = props => {
 const Projects = () => (
   <Fragment>
     <PaperUI>
+      <Typography variant="h5">Projects</Typography>
       {PROJECTS.map(PROJECT => (
         <Project key={PROJECT.id} project={PROJECT} />
       ))}

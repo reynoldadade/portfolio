@@ -10,7 +10,7 @@ const Blog = props => {
   return (
     <Fragment>
       <Grid item xs={12}>
-        <img src={thumbnail} style={{ width: '100%' }} />
+        <img src={thumbnail} style={{ width: '100%' }} alt="medium-header" />
         <Link href={link}>
           <Typography variant="h5">{title}</Typography>
         </Link>
@@ -49,7 +49,7 @@ class Blogs extends Component {
     return (
       <PaperUI>
         <Typography variant="h5">Blog Posts</Typography>
-        <Grid container>
+        <Grid container style={{ overflowY: 'auto', height: 300 }}>
           {stories.map(story => {
             return <Blog key={story.guid} story={story} />;
           })}

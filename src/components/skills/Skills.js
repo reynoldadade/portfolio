@@ -23,7 +23,7 @@ const Skill = props => {
 const Skills = () => {
   return (
     <PaperUI>
-      <Typography variant="h5">SKILLS</Typography>
+      <Typography variant="h5">Skills</Typography>
       {SKILLS.map(SKILL => {
         return (
           <div style={{ marginTop: 20 }} key={SKILL.id}>

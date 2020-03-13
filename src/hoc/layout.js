@@ -8,23 +8,25 @@ import Skills from '../components/Skills/Skills';
 import Certifications from '../components/Certifications/Certifications';
 import Lang from '../components/Languages/Language';
 import Blog from '../components/Blogs/Blog';
-
+import WorkExperience from '../components/WorkExperience/WorkExperiences';
 const Layout = () => {
   return (
     <Fragment>
       <Navbar />
       <Grid container spacing={2}>
-        <Grid item md={8} sm={12} xs={12}>
-          <Profile />
+        <Grid container item xs={12} spacing={2}>
+          <Grid item md={8} sm={12} xs={12}>
+            <Profile />
+          </Grid>
+          <Grid item md={4} xs={12} sm={12}>
+            <Contact />
+          </Grid>
         </Grid>
-        <Grid item md={4} xs={12} sm={12}>
-          <Contact />
-        </Grid>
-        <Grid item md={8} sm={12} xs={12}>
-          <Projects />
-        </Grid>
-        <Grid item md={4} sm={12} xs={12}>
-          <Grid container>
+        <Grid container item xs={12} spacing={2}>
+          <Grid item md={8} sm={12} xs={12}>
+            <Projects />
+          </Grid>
+          <Grid item container md={4} sm={12} xs={12}>
             <Grid item xs={12}>
               <Skills />
             </Grid>
@@ -39,8 +41,8 @@ const Layout = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item md={12} sm={12} xs={12}>
-          <div>Work Experience</div>
+        <Grid item xs={12} style={{ alignItems: 'space-around' }}>
+          <WorkExperience />
         </Grid>
       </Grid>
     </Fragment>
