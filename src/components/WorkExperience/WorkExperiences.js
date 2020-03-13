@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PaperUI from '../../UI/Paper';
 import {
   Typography,
@@ -41,7 +41,7 @@ const WorkExperiences = () => {
   return (
     <PaperUI>
       <Typography variant="h5">Work Experience</Typography>
-      {WORKEXPERIENCES.map(WORKEXPERIENCE => {
+      {WORKEXPERIENCES.reverse().map(WORKEXPERIENCE => {
         return (
           <WorkExperience
             key={WORKEXPERIENCE.id}
